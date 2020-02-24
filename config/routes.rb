@@ -6,5 +6,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       get '/feed', to: 'feed#index', as: 'product_feed'
     end
+    
+    namespace :v2 do
+      get '/feed', to: 'feed#index', as: 'product_feed'
+    end
   end
 end
