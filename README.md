@@ -1,5 +1,7 @@
 # Rails Product Feed for Klaviyo
 
+Author: [LuckyGStar](https://github.com/LuckyGStar)
+
 ## Getting started with play around in local
 
 The following assumes that you have a machine equipped with Ruby, Postgres, etc. If not, consider setting up
@@ -10,7 +12,6 @@ After you have cloned this repo:
 * Run `bundle`
 * Create the database
   * `rake db:setup`
-  * 
 * Run the application using [Heroku Local]
   * `heroku local`
 * Navigate to [localhost:3000](http://localhost:3000) and see the project up and running.
