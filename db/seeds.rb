@@ -1,12 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
 # rubocop:disable Style/WordArray, Layout/AlignArray, Layout/MultilineArrayBraceLayout
+Category.delete_all
+Product.delete_all
+ProductCategory.delete_all
+
 categories = {
   "Accessories" => [
     "Belts", "Bags", "Gloves", "Hats & Headwear", "Keychains",
@@ -26,14 +22,14 @@ categories = {
     "Stickers"
   ],
   "Pets" => ["Accessories", "Food", "Health", "Toys"]
-}
+}.freeze
 
 categories.each do |parent, children|
-  parent_tag = Category.where(parent_id: nil, name: parent).last
-  parent_tag ||= Category.create!(name: parent)
+  parent_tag = Category.where(parent_id: nil, name: parent, display_name: parent).last
+  parent_tag ||= Category.create!(name: parent, display_name: parent)
 
   children.each do |child|
-    Category.create!(name: child, parent_id: parent_tag.id)
+    Category.create!(name: child, display_name: child, parent_id: parent_tag.id)
   end
 end
 
