@@ -20,13 +20,13 @@ After you have cloned this repo:
 
 ## Feed Url
 
-Api without auth : [localhost:3000/api/v1/feed](http://localhost:3000/api/v1/feed)
-Api with basic auth : [localhost:3000/api/v2/feed](http://localhost:3000/api/v2/feed)
+* Api without auth : [localhost:3000/api/v1/feed](http://localhost:3000/api/v1/feed)
+* Api with basic auth : [localhost:3000/api/v2/feed](http://localhost:3000/api/v2/feed)
 
 ## Heroku Feed Url
 
-Api without auth : [https://rails-feed-api.herokuapp.com/api/v1/feed](https://rails-feed-api.herokuapp.com/api/v1/feed)
-Api with basic auth : [https://rails-feed-api.herokuapp.com/api/v2/feed](https://rails-feed-api.herokuapp.com/api/v2/feed)
+* Api without auth : [https://rails-feed-api.herokuapp.com/api/v1/feed](https://rails-feed-api.herokuapp.com/api/v1/feed)
+* Api with basic auth : [https://rails-feed-api.herokuapp.com/api/v2/feed](https://rails-feed-api.herokuapp.com/api/v2/feed)
 
 ## Deploying
 
