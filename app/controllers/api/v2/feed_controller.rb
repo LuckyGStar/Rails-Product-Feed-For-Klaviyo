@@ -4,7 +4,7 @@ module Api
       def index
         @products = Product.all
         
-        render :json => @products
+        render :json => @products, each_serializer: ProductSerializer
       end
     end
   end
